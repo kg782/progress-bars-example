@@ -1,3 +1,0 @@
-0000000000000000000000000000000000000000 14fa12ef71cbba0573979ebd4775f931571c4bb9 kg782 <keigomuto@gmail.com> 1488356899 +1100	clone: from https://github.com/kriasoft/react-static-boilerplate.git
-14fa12ef71cbba0573979ebd4775f931571c4bb9 9d160e706a4467b3858343ecd06a0fa40877edfe kg782 <keigomuto@gmail.com> 1488369252 +1100	commit: Implemented progress bars
-9d160e706a4467b3858343ecd06a0fa40877edfe 1221467dc6d5aff656d96dde64202a851da2bc4e kg782 <keigomuto@gmail.com> 1488370788 +1100	commit: Fixed linting errors
