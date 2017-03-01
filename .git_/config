@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+[remote "react-static-boilerplate"]
+	url = https://github.com/kriasoft/react-static-boilerplate.git
+	fetch = +refs/heads/master:refs/remotes/react-static-boilerplate/master
+[branch "master"]
+	remote = react-static-boilerplate
+	merge = refs/heads/master
+[remote "kg782"]
+	url = git@github.com:kg782/progress-bars-example.git
+	fetch = +refs/heads/*:refs/remotes/kg782/*

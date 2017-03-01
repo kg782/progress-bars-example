@@ -1,0 +1,15 @@
+[
+  {
+    "path": "/",
+    "page": "./home",
+    "chunk": "main",
+    "data": {
+      "bars": "GET http://frontend-exercise.apps.staging.digital.gov.au/bars"
+    }
+  },
+  {
+    "path": "/error",
+    "page": "./error",
+    "chunk": "main"
+  }
+]
