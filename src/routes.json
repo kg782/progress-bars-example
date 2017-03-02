@@ -4,7 +4,7 @@
     "page": "./home",
     "chunk": "main",
     "data": {
-      "bars": "GET http://frontend-exercise.apps.staging.digital.gov.au/bars"
+      "bars": "GET https://frontend-exercise.apps.staging.digital.gov.au/bars"
     }
   },
   {
@@ -12,7 +12,7 @@
     "page": "./home",
     "chunk": "main",
     "data": {
-      "bars": "GET http://frontend-exercise.apps.staging.digital.gov.au/bars"
+      "bars": "GET https://frontend-exercise.apps.staging.digital.gov.au/bars"
     }
   },
   {
