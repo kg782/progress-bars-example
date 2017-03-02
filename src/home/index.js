@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import LinearProgress from 'material-ui/LinearProgress';
 import RaisedButton from 'material-ui/RaisedButton';
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import { pinkA200, cyan500 } from 'material-ui/styles/colors';
 import Layout from '../../components/Layout';
+import Bar from '../../components/Bar';
 import s from './styles.css';
 import { setIndex, setProgress } from '../actions';
 
@@ -34,20 +34,7 @@ class HomePage extends React.Component {
 
   renderBars() {
     return this.props.data.bars.map(bar => (
-      <div key={bar.index} className={s.bar}>
-        <LinearProgress
-          mode="determinate"
-          value={bar.progress}
-          color={bar.progress > 100 ? pinkA200 : cyan500}
-          style={{
-            borderRadius: 8,
-            height: 50,
-          }}
-        />
-        <div className={s.barLabel}>
-          {`${bar.progress}%`}
-        </div>
-      </div>
+      <Bar key={bar.index} progress={bar.progress} />
     ));
   }
 

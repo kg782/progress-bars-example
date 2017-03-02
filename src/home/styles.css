@@ -2,21 +2,6 @@
   min-width: 320px;
 }
 
-.bar {
-  position: relative;
-  margin-bottom: 12px;
-}
-
-.barLabel {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  line-height: 50px;
-}
-
 @media screen and (max-width: 1024px) {
   .content {
     padding: 0 16px;

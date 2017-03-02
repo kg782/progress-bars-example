@@ -1,19 +1,17 @@
-/**
- * React Static Boilerplate
- * https://github.com/kriasoft/react-static-boilerplate
- *
- * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
+import React from 'react';
 import { expect } from 'chai';
+import { shallow } from 'enzyme';
+import LinearProgress from 'material-ui/LinearProgress';
+import Bar from '../components/Bar';
 
-describe('test suite', () => {
+describe('Bar', () => {
 
-  it('test', () => {
-    expect(true).to.be.true;
+  it('should render LinearProgress and div', () => {
+    const wrapper = shallow(<Bar progress={50} />);
+    expect(wrapper.containsAllMatchingElements([
+      <LinearProgress value={50} mode="determinate" />,
+      <div>50%</div>,
+    ])).to.equal(true);
   });
 
 });
