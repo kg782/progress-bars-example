@@ -1,11 +1,10 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import RaisedButton from 'material-ui/RaisedButton';
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
-import { pinkA200, cyan500 } from 'material-ui/styles/colors';
 import Layout from '../../components/Layout';
 import Bar from '../../components/Bar';
+import Button from '../../components/Button';
 import s from './styles.css';
 import { setIndex, setProgress } from '../actions';
 
@@ -62,16 +61,7 @@ class HomePage extends React.Component {
 
   renderButtons() {
     return this.props.data.buttons.map(button => (
-      <RaisedButton
-        key={button.index}
-        label={button.delta > 0 ? `+${button.delta}` : button.delta}
-        primary
-        style={{
-          marginRight: 12,
-          marginBottom: 12,
-        }}
-        onClick={() => this.handleButtonClick(button.delta)}
-      />
+      <Button key={button.index} delta={button.delta} onProgress={this.handleButtonClick} />
     ));
   }
 
